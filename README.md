@@ -46,4 +46,3 @@ User Experience
     Smooth animations and transitions
 
 This project demonstrates front-end development skills including responsive design, UI/UX principles, and JavaScript interactivity. All links connect to the actual Google services, providing a seamless experience that mirrors the real Google homepage.
-New chat
