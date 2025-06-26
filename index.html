@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+     <link rel="stylesheet" href="style.css">
+     </head>
+<body>
+    <!-- Header/Navigation -->
+    <header>
+        <a href="https://mail.google.com" class="nav-link" target="_blank">Gmail</a>
+        <a href="https://www.google.com/imghp" class="nav-link" target="_blank">Images</a>
+        <div class="apps-icon" id="appsIcon">
+            <i class="fas fa-th"></i>
+        </div>
+        <button class="sign-in-btn" onclick="window.open('https://accounts.google.com', '_blank')">Sign in</button>
+        
+        <!-- Apps Dropdown -->
+        <div class="apps-dropdown" id="appsDropdown">
+            <a href="https://mail.google.com" class="app-item" target="_blank">
+                <div class="app-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <span class="app-name">Gmail</span>
+            </a>
+            <a href="https://photos.google.com" class="app-item" target="_blank">
+                <div class="app-icon">
+                    <i class="fas fa-images"></i>
+                </div>
+                <span class="app-name">Photos</span>
+            </a>
+            <a href="https://maps.google.com" class="app-item" target="_blank">
+                <div class="app-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <span class="app-name">Maps</span>
+            </a>
+            <a href="https://www.youtube.com" class="app-item" target="_blank">
+                <div class="app-icon">
+                    <i class="fas fa-play-circle"></i>
+                </div>
+                <span class="app-name">YouTube</span>
+            </a>
+            <a href="https://news.google.com" class="app-item" target="_blank">
+                <div class="app-icon">
+                    <i class="fas fa-newspaper"></i>
+                </div>
+                <span class="app-name">News</span>
+            </a>
+            <a href="https://drive.google.com" class="app-item" target="_blank">
+                <div class="app-icon">
+                    <i class="fas fa-cloud"></i>
+                </div>
+                <span class="app-name">Drive</span>
+            </a>
+            <a href="https://calendar.google.com" class="app-item" target="_blank">
+                <div class="app-icon">
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+                <span class="app-name">Calendar</span>
+            </a>
+            <a href="https://meet.google.com" class="app-item" target="_blank">
+                <div class="app-icon">
+                    <i class="fas fa-video"></i>
+                </div>
+                <span class="app-name">Meet</span>
+            </a>
+            <a href="https://shopping.google.com" class="app-item" target="_blank">
+                <div class="app-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                </div>
+                <span class="app-name">Shopping</span>
+            </a>
+            <a href="https://play.google.com" class="app-item" target="_blank">
+                <div class="app-icon">
+                    <i class="fas fa-play"></i>
+                </div>
+                <span class="app-name">Play</span>
+            </a>
+            <a href="https://contacts.google.com" class="app-item" target="_blank">
+                <div class="app-icon">
+                    <i class="fas fa-address-book"></i>
+                </div>
+                <span class="app-name">Contacts</span>
+            </a>
+            <a href="https://about.google/products" class="app-item" target="_blank">
+                <div class="app-icon">
+                    <i class="fas fa-dot-circle"></i>
+                </div>
+                <span class="app-name">More from Google</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <a href="https://www.google.com" target="_blank">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google" class="google-logo">
+        </a>
+        
+        <form action="https://www.google.com/search" method="GET" target="_blank" class="search-container">
+            <div class="search-box" id="searchBox">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" class="search-input" id="searchInput" name="q" placeholder="Search Google or type a URL" autocomplete="off">
+                <div class="search-actions">
+                    <div class="mic-icon" id="micIcon" title="Search by voice">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <div class="camera-icon" id="cameraIcon" title="Search by image">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="search-buttons">
+                <button type="submit" class="search-btn" id="googleSearchBtn">Google Search</button>
+                <button type="button" class="search-btn" id="feelingLuckyBtn">I'm Feeling Lucky</button>
+            </div>
+        </form>
+        
+        <div class="google-offered">
+            <p>Google offered in: <a href="https://www.google.com/preferences?hl=en" target="_blank">English</a></p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-location">
+            <p>United States</p>
+        </div>
+        
+        <div class="footer-links">
+            <div class="footer-left">
+                <a href="https://about.google" target="_blank">About</a>
+                <a href="https://www.google.com/intl/en_us/ads" target="_blank">Advertising</a>
+                <a href="https://www.google.com/services" target="_blank">Business</a>
+                <a href="https://www.google.com/search/howsearchworks" target="_blank">How Search works</a>
+            </div>
+            
+            <div class="footer-right">
+                <a href="https://policies.google.com/privacy" target="_blank">Privacy</a>
+                <a href="https://policies.google.com/terms" target="_blank">Terms</a>
+                <a href="https://www.google.com/preferences" target="_blank">Settings</a>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Image Search Overlay -->
+    <div class="image-search-overlay" id="imageSearchOverlay">
+        <div class="close-btn" id="closeImageSearch">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="image-search-box">
+            <h2 class="image-search-title">Search by image</h2>
+            <div class="image-upload-area" id="imageUploadArea">
+                <div class="upload-icon">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                </div>
+                <p class="upload-text">Drag an image here</p>
+                <p class="upload-subtext">or</p>
+                <button class="upload-btn" onclick="window.open('https://images.google.com', '_blank')">Choose an image to upload</button>
+            </div>
+            <p class="upload-subtext">Supported formats: JPEG, PNG, GIF, BMP</p>
+        </div>
+    </div>
+    
+    <!-- Voice Recognition Feedback -->
+    <div class="voice-feedback" id="voiceFeedback">
+        <div class="voice-animation">
+            <div class="voice-bar"></div>
+            <div class="voice-bar"></div>
+            <div class="voice-bar"></div>
+            <div class="voice-bar"></div>
+            <div class="voice-bar"></div>
+            <div class="voice-bar"></div>
+            <div class="voice-bar"></div>
+        </div>
+        <p class="voice-text" id="voiceText">Listening...</p>
+        <button class="cancel-voice-btn" id="cancelVoiceBtn">Cancel</button>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
